@@ -17,8 +17,6 @@ body {
 }
 
 
-
-
 /*  Font */
 h1 {
     font-size: 3rem;
@@ -37,15 +35,22 @@ p {
 
 
 
-/* Header */
+/* Header image*/
 header>img {
     display: block;
+    width: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
-    height: auto;
 }
 
+header>img:hover {
+    transform: scale(1.03);
+}
 
 
 
@@ -96,38 +101,14 @@ nav a:active {
 
 /* Promo */
 .promo-section {
-    display: flex;
-}
-
-.promo-banner {
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
     margin-bottom: 2rem;
-}
-
-.promo-banner>img {
-    width: 50%;
-    max-height: 400px;
-    display: block;
-    border-radius: 12px;
-    transition: transform 0.5s ease;
-    position: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.promo-banner>img:hover {
-    transform: scale(1.03);
 }
 
 .promo-text {
     padding: 2rem;
     background-color: rgba(181, 87, 58, 0.08);
-    border-radius: 0 0 12px 12px;
+    border-radius: 12px;
 }
-
 
 
 
@@ -167,7 +148,7 @@ nav a:active {
 
 
 
-/* column image */
+/* column images */
 .img-1 {
     object-position: center 20%;
 }
@@ -223,10 +204,6 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.promo-banner {
-    animation: EFFECT 0.8s ease forwards;
 }
 
 .columns-section article:nth-child(1) {
