@@ -1,0 +1,144 @@
+/* Services Page Styles */
+
+.text-center {
+    text-align: center;
+}
+
+.services-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.services-category {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #b5573a;
+    animation: EFFECT 0.6s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.services-category h2 {
+    font-size: 1.8rem;
+    color: #b5573a;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f5f0eb;
+    padding-bottom: 0.5rem;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    margin: 0 -1rem;
+    border-radius: 8px;
+    border-bottom: 1px dashed rgba(181, 87, 58, 0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service-item:hover {
+    background-color: rgba(181, 87, 58, 0.03);
+    transform: translateX(4px);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-info {
+    flex: 1;
+    padding-right: 1.5rem;
+}
+
+.service-name {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #3a2e2e;
+}
+
+.service-description {
+    font-size: 0.9rem;
+    color: #5a4a4a;
+    margin-top: 0.3rem;
+}
+
+.service-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-price-time {
+    text-align: right;
+    min-width: 100px;
+}
+
+.service-price {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #b5573a;
+    display: block;
+}
+
+.service-duration {
+    font-size: 0.85rem;
+    color: #8a7a7a;
+    display: block;
+    margin-top: 0.1rem;
+}
+
+.btn-book {
+    background-color: #b5573a;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-book:hover {
+    background-color: #8a3d25;
+    box-shadow: 0 4px 10px rgba(181, 87, 58, 0.2);
+}
+
+.btn-book:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .service-info {
+        padding-right: 0;
+    }
+    
+    .service-meta {
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    .service-price-time {
+        text-align: left;
+        min-width: auto;
+    }
+}

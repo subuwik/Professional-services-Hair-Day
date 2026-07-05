@@ -1,0 +1,35 @@
+/* Contact Page Styles */
+
+.contact-us {
+    text-align: left;
+}
+
+.columns-section {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.columns-section article {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+}
+
+.columns-section h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.columns-section h2:first-of-type {
+    margin-top: 0;
+}
+
+.columns-section p {
+    margin-bottom: 1.5rem;
+}
+
+.columns-section p:last-of-type {
+    margin-bottom: 0;
+}

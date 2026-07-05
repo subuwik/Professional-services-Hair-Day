@@ -34,7 +34,6 @@ p {
 
 
 
-
 /* Header image*/
 header>img {
     display: block;
@@ -51,7 +50,6 @@ header>img {
 header>img:hover {
     transform: scale(1.03);
 }
-
 
 
 /* Navigation */
@@ -97,8 +95,6 @@ nav a:active {
 }
 
 
-
-
 /* Promo */
 .promo-section {
     margin-bottom: 2rem;
@@ -110,57 +106,9 @@ nav a:active {
     border-radius: 12px;
 }
 
-
-
-/* Columns */
-.columns-section {
-    display: flex;
-    gap: 1.5rem;
+.contact-us {
+    text-align: left;
 }
-
-.columns-section article {
-    flex: 1;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.columns-section article:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 24px rgba(181, 87, 58, 0.15);
-}
-
-.columns-section article img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    transition: opacity 0.3s ease;
-}
-
-.columns-section article:hover img {
-    opacity: 0.9;
-}
-
-
-
-
-/* column images */
-.img-1 {
-    object-position: center 20%;
-}
-
-.img-2 {
-    object-position: center 35%;
-}
-
-.img-3 {
-    object-position: center 10%;
-}
-
 
 
 /* footer */
@@ -191,8 +139,6 @@ footer p {
 }
 
 
-
-
 /* animations */
 @keyframes EFFECT {
     from {
@@ -204,19 +150,4 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.columns-section article:nth-child(1) {
-    animation: EFFECT 0.6s ease 0.2s forwards;
-    opacity: 0;
-}
-
-.columns-section article:nth-child(2) {
-    animation: EFFECT 0.6s ease 0.4s forwards;
-    opacity: 0;
-}
-
-.columns-section article:nth-child(3) {
-    animation: EFFECT 0.6s ease 0.6s forwards;
-    opacity: 0;
 }
